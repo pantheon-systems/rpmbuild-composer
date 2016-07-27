@@ -1,0 +1,15 @@
+---
+dependencies:
+  pre:
+    - make deps
+    - make deps-circle
+
+test:
+  override:
+    - make all test
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - bash scripts/push_packagecloud.sh internal-staging
