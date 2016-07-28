@@ -1,4 +1,4 @@
-# RPM for wp-cli
+# RPM for Composer
 
 This repository builds an RPM for Composer.
 
