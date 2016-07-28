@@ -27,6 +27,7 @@ target_dir="$bin/../pkgs"
 rm -rf $download_dir
 mkdir -p $download_dir
 curl -L -f https://getcomposer.org/download/${version}/composer.phar --output $download_dir/composer.phar
+chmod 755 $download_dir/composer.phar
 
 mkdir -p "$target_dir"
 
