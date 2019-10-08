@@ -25,3 +25,5 @@ This repository does NOT automatically promote the internal-staging RPM to inter
 ## Provisioning Composer on Pantheon
 
 Pantheon will automatically install any new RPM that is deployed to Package Cloud. This is controlled by [pantheon-cookbooks/php](https://github.com/pantheon-cookbooks/php/blob/master/recipes/composer.rb).
+
+Note that the RPM is not used in COS. See [cos-framework-clis](https://github.com/pantheon-systems/cos-framework-clis) for the COS equivalent.
