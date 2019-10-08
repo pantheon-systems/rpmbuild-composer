@@ -11,7 +11,6 @@ defaults:
 
 version: 2
 jobs:
-
   # Download Composer, then build and test the RPM
   build:
     <<: *rpmbuild_container
@@ -47,7 +46,7 @@ workflows:
   version: 2
   build-test-publish-promote:
     jobs:
-      - build:
+      - build
       - publish:
           requires:
             - build
