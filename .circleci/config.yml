@@ -16,12 +16,10 @@ jobs:
     <<: *rpmbuild_container
     steps:
       - checkout
-      - attach_workspace:
-          at: /rpmbuild
       - run: echo 'export PATH=/rpmbuild/bin:$PATH' >> $BASH_ENV
       - run:
           name: Build PHP RPMs
-          command: make package
+          command: make rpm
           no_output_timeout: 4h
       - persist_to_workspace:
           root: /rpmbuild
