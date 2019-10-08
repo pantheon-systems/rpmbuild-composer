@@ -16,11 +16,11 @@ This rpm installs:
 
 ## Releasing to Package Cloud
 
-Any time a commit is merged on the master branch, then the composer RPM is built and pushed up to Package Cloud in pantheon/internal-staging/fedora/#.
+Any time a pull request is created, then the composer RPM is built and pushed up to Package Cloud in pantheon/internal-staging/fedora/#.
 
 In the example, # is the fedora build number (19, 20, 22). Note that Composer is only installed on app servers, and there are no app servers on anything prior to f22; therefore, at the moment, we are only building for f22.
 
-To release a new version of Composer, simply update the VERSION.txt file and commit. Run `make` to build locally. Push to master to have an official RPM built and pushed to Package Cloud staging via Circle CI.
+This repository does NOT automatically promote the internal-staging RPM to internal (production) when the PR is merged to master. This step must be done manually.
 
 ## Provisioning Composer on Pantheon
 
