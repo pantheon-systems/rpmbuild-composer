@@ -1,5 +1,7 @@
 # RPM for Composer
 
+[![Deprecated](https://img.shields.io/badge/Pantheon-Deprecated-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#deprecated)
+
 This repository builds an RPM for Composer.
 
 The RPM filename built by this repository is:
